@@ -18,7 +18,7 @@ def test_practice_form_create_user():
     browser.element('//label[@for="hobbies-checkbox-1"]').click()
     browser.element('//label[@for="hobbies-checkbox-2"]').click()
     browser.element('//label[@for="hobbies-checkbox-3"]').click()
-    browser.element('#uploadPicture').send_keys(os.path.abspath("files/photo_man.png"))
+    browser.element('#uploadPicture').send_keys(os.path.abspath("photos/video-games.jpg"))
     browser.element('#currentAddress').type('Test, 65')
     browser.element('#react-select-3-input').type("NC").press_enter()
     browser.element('#react-select-4-input').type("De").press_enter()
