@@ -8,7 +8,7 @@ def test_practice_form_create_user():
     browser.element('#lastName').type('Korolev')
     browser.element('#userEmail').type('v@gmail.com')
     browser.element('[for="gender-radio-3"]').click()
-    browser.element('#userNumber').type('79151411144')
+    browser.element('#userNumber').type('7915141114')
     browser.element('#dateOfBirthInput').click()
     browser.element('.react-datepicker__month-select>option:nth-child(12)').click()
     browser.element('.react-datepicker__year-select>[value = "1998"]').click()
@@ -26,5 +26,5 @@ def test_practice_form_create_user():
     browser.element('#example-modal-sizes-title-lg').should(be.present)
     browser.element('.table').all('td').even.should(have.exact_texts
                                                     ('Vadim Korolev', 'v@gmail.com', 'Other',
-                                                     '79151411144', '27 December,1998', 'Physics, Biology',
-                                                     'Sports', 'Reading', 'Music', 'photo_man.png', 'Test, 65', 'NCR Delhi'))
+                                                     '7915141114', '27 December,1998', 'Physics, Biology',
+                                                     'Sports, Reading, Music', 'video-games.jpg', 'Test, 65', 'NCR Delhi'))
